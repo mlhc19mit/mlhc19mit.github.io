@@ -1,0 +1,82 @@
+body {
+  margin:      50px;
+  font-family: 'Crimson Text', serif;
+}
+
+h1 {
+  font-size:      xx-large;
+  padding-bottom: 0px;
+  margin-bottom:  0px;
+}
+
+h3 {
+  font-size:      x-large;
+  padding-bottom: 0px;
+  margin-bottom:  0px;
+}
+
+h4 {
+  font-size:      large;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top:  0px;
+  margin-bottom:  0px;
+}
+
+ul {
+  margin-top: 0px;
+}
+
+#header {
+  padding-top: 0px;
+  margin-top:  0px;
+  font-size:   x-large;
+}
+
+div.lecture {
+  border-style:  solid;
+  border-color:  grey;
+  margin-top:    25px;
+  margin-bottom: 25px;
+  padding-left:  25px;
+  padding-top:   10px;
+  passing-bottom: 10px;
+
+}
+
+div.lecture-prep {
+  padding-left: 25px;
+}
+
+span.lecture-prep {
+    text-decoration: underline;
+}
+
+span.lecture-date {
+  font-size: large;
+  font-variant: small-caps;
+}
+
+span.lecture-assign {
+  font-weight: bold;
+}
+
+p.lecture {
+  margin-left: 50px;
+  margin-top:  0px;
+}
+
+span.note {
+  color:     red;
+}
+
+span.required {
+  color:     red;
+}
+
+span.optional {
+  color:     green;
+}
+span.slides {
+  color:     black;
+}
