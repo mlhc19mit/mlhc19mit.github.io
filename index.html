@@ -1,0 +1,481 @@
+<html>
+<head>
+   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+   <meta http-equiv="Pragma" content="no-cache">
+   <meta http-equiv="Expires" content="0">
+   <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+   <link href="style.css" rel="stylesheet" type="text/css">
+   <title>6.S897/HST.S53: Machine Learning for Healthcare </title>
+ </head>
+ <body>
+   
+   <h1>6.S897/HST.S53: Machine Learning for Healthcare</h1>
+
+   
+   <div id="header">
+     MIT. Spring 2017<br>
+   </div>
+   Instructor: Professor <a href="http://people.csail.mit.edu/dsontag/">David Sontag</a> (OH: TBD)<br>
+   Teaching Assistant: <a href="http://mymakar.github.io">Maggie Makar</a> (OH: Wednesdays 5-7. Location 56-162)<br>
+   Graduate level; Units 2-0-4  (counts as an AAGS subject) <br>
+   Time: Wednesdays 2:30-4pm <br>
+   Location: 56-154 <br>
+   Contact: 6.s897hst.s53[at]gmail.com or through <a href="https://piazza.com/mit/spring2017/6s897hsts53/home">Piazza</a><br>
+
+   <hr>
+
+   <span class="menu">
+     <a href="#course">Course Description</a> |
+     <a href="#schedule">Schedule</a> | 
+     <a href="https://piazza.com/mit/spring2017/6s897hsts53/home">Piazza</a> |
+     <a href="#Psets">Problem sets</a> | 
+      <a href="#projects">Projects</a> |
+     <a href="#grading">Grading</a> 
+    </span>
+<!-- announcements 
+  <h3>Announcements</h3>
+
+   <ul>
+     <li>No announcements yet</li>
+ 
+   </ul>
+
+   <hr>-->
+<!--Course description-->
+<a name="course">
+<h3>Course description</h3>
+<p>Explores machine learning methods for clinical and healthcare applications. Covers concepts of algorithmic fairness, interpretability, and causality. Discusses application of time-series analysis, graphical models, deep learning and transfer learning methods to solving problems in healthcare. Considers how newly emerging machine learning techniques will shape healthcare policy and personalized medicine.</p>
+<hr>
+<!-- schedule -->
+  <a name="schedule">
+   <h3>Schedule</h3>
+
+<!---Feb-->
+
+  </a><div class="lecture"><a name="schedule">
+  <p> Schedule is tentative and subject to change</p>
+  <!--lect 1-->
+     <span class="lecture-date">Feb 8, 2017</span>
+     <p class="lecture">
+     <span class="lecture-title"> Lecture 1: What makes healthcare unique? </span>
+     </p></a><div class="lecture-prep"><a name="schedule">
+       </a><ul><a name="schedule">
+       <li><span class="lecture-assign"> Problem set 0 Out</span></li> 
+         <li>[<span class="slides">Slides</span>] <a href="slides/lecture1.pdf">Lecture 1</a> </i></li>
+       </ul>
+     </div>
+
+     <p></p>
+
+     <hr width="80%">
+	<!--lect 2-->
+     <span class="lecture-date">Feb 15, 2017</span>
+     <p class="lecture">
+     <span class="lecture-title">Lecture 2: Supervised learning for risk stratification </span>
+       </p><div class="lecture-prep">
+       <ul>
+         <li><span class="lecture-assign">Problem set 0 due. Problem set 1 Out. </span></li>    
+         <li>[<span class="slides">Slides</span>] <a href="slides/lecture2.pdf">Lecture 2</a> </li>
+         <li>[<span class="required">required</span>] <a href="http://content.healthaffairs.org/content/33/7/1123.abstract"> Big Data In Health Care: Using Analytics To Identify And Manage High-Risk And High-Cost Patients.</a></li>
+         <li>[<span class="optional">optional</span>] <a href="http://online.liebertpub.com/doi/pdf/10.1089/big.2015.0020">Population-Level Prediction of Type 2 Diabetes using Claims Data and Analysis of Risk Factors.</a></li>
+       </ul>
+     </div>
+     <p></p>
+
+     <hr width="80%">
+     <!--lect 3-->
+     <span class="lecture-date">Feb 22, 2017</span>
+     <p class="lecture">
+     <span class="lecture-title">Lecture 3: Predicting the outcome of interventions: causal inference from observational data </span>
+       </p><div class="lecture-prep">
+       <ul>
+       	<li>[<span class="slides">Slides</span>] <a href="slides/lecture3.pdf">Lecture 3</a> </li>
+        <li>[<span class="required">required</span>] <a href="http://stm.sciencemag.org/content/7/299/299ra122"> A targeted real-time early warning score (TREWScore) for septic shock.</a></li>
+         <li>[<span class="optional">optional</span>] Survival Models. 
+          <ol>
+          <li> <a href="http://data.princeton.edu/wws509/notes/c7.pdf">Princeton POP 507 lecture notes</a> </li>
+          <li><a href="https://papers.nips.cc/paper/3375-on-ranking-in-survival-analysis-bounds-on-the-concordance-index.pdf">On Ranking in Survival Analysis: Bounds on the Concordance Index</a> </li>
+
+          <li><a href="http://www.jmlr.org/proceedings/papers/v56/Ranganath16.pdf">Deep survival analysis</a></li>
+          </ol>
+         <li>[<span class="optional">optional</span>] Causality references</li>
+         <ol>
+         <li> <a href="https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/">Causal inference book, chapter 1 (or more)</a>. 
+         </li>
+        <li><a href="http://www.math.ku.dk/~peters/jonas_files/scriptChapter1-4.pdf">Jonas Peters' lecture notes</a></li> 
+
+        <li><a href="http://www.stewartschultz.com/statistics/books/Design%20of%20observational%20studies.pdf"> Design of observational studies (book by P. Rosenbaum)</a> </li>
+        <li> <a href="http://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf">Causal inference in statistics: An overview (by Judea Pearl)</a></li>
+        <li><a href="http://techtalks.tv/talks/causal-inference-for-observational-studies/62355/" >ICML causality workshop</a> 
+         </li>
+      </ol>
+      </ul>
+     </div>
+     <p></p>
+ 
+   </div>
+
+<!--March -->
+  </a><div class="lecture"><a name="schedule">
+
+	<!--lect 4-->
+     <span class="lecture-date">March 1, 2017</span>
+     <p class="lecture">
+     <span class="lecture-title">Lecture 4: Ethics of machine learning to prioritize care: bias, fairness and accountability
+ </span>
+       </p><div class="lecture-prep">
+       <ul>
+         <li><span class="lecture-assign">L4 Reflection <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-eLWqrkqTiaAjpESoazOP_T5806OewGChQ2JiKasvD1a40g/viewform" >questions</a> due (at noon). </span></li>    
+         <li>[<span class="slides">Slides</span>] <a href="slides/lecture4.pdf">Lecture 4</a> </li>
+         <li>[<span class="required">required</span>] <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"> Machine bias</a> and accompanying statistical  <a href="https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm">analyses </a></li>
+         <li>[<span class="required">required</span>]One of the following three readings
+          <ol>
+         	<li><a href="https://arxiv.org/pdf/1609.05807.pdf">Inherent Trade-Offs in the Fair Determination of Risk Score</a> </li>
+         	<li><a href="http://www.andrew.cmu.edu/user/achoulde/files/disparate_impact.pdf">Fair prediction with disparate impact: A study of bias in recidivism prediction instruments</a> </li>
+         	<li><a href="https://arxiv.org/pdf/1610.02413.pdf">Equality of Opportunity in Supervised Learning</a> 
+         </li>
+       </ol>
+         <li>[<span class="required">required</span>] <a href="http://www.jmlr.org/proceedings/papers/v28/zemel13.pdf">Learning Fair Representations </a> 
+         </li>
+         <li>[<span class="optional">referenced in class</span>] <a href="https://arxiv.org/pdf/1702.06081.pdf">Learning Non-Discriminatory Predictors</a></li>
+         <li>[<span class="optional">referenced in class</span>] <a href="https://arxiv.org/pdf/1511.00830.pdf">The variational fair autoencoder</a></li>
+         <li>[<span class="optional">referenced in class</span>] <a href="https://arxiv.org/abs/1605.07139">Fairness in Learning: Classic and Contextual Bandits</a></li>
+
+      </ul>
+     </div>
+     <p></p>
+
+     <hr width="80%">
+     <!--lect 5-->
+     <span class="lecture-date">March 8, 2017</span>
+     <p class="lecture">
+     <span class="lecture-title">Lecture 5: Machine learning in
+     radiology (Guest lecture. Amir Tahmasebi and Christine Swisher, Philips Healthcare)</span>
+       </p><div class="lecture-prep">
+       <ul>
+       	<li>[<span class="slides">Slides</span>] Lecture 5 <a href="slides/lecture5_AmirTahmasebi.pdf">part 1</a>
+     (Amir Tahmasebi), <a href="slides/lecture5_ChristineSwisher.pdf">part 2</a> (Christine Swisher)</li>
+        <li>[<span class="required">background</span>] <a
+     href="https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/">Oxford
+     machine learning class material</a> (Lectures 8-10 and 12)
+
+     </ul>
+     </div>
+     <p></p>
+     <hr width="80%">
+     <!--lect 5-->
+     <span class="lecture-date">March 15, 2017</span>
+     <p class="lecture">
+     <span class="lecture-title">Lecture 6: AI for computational pathology (Guest lecture: <a href="http://becklab.hms.harvard.edu/people/andrew-beck">Andrew Beck</a>, MD, PhD, BIDMC and PathAI) </span>
+       </p><div class="lecture-prep">
+       <ul>
+         <li><span class="lecture-assign">L6 Reflection <a href="https://docs.google.com/forms/d/e/1FAIpQLSenPPK5UIV0FilqjR5yhyE1URv-W_rFj9S6bfKOXNtifEmdMg/viewform?usp=sf_link" >questions</a> due (at noon). </span></li>   
+       	<li>[<span class="slides">Slides</span>] <a href="slides/lecture6.pdf">Lecture 6</a>
+          <li>[<span class="required">required</span>] <a href="https://arxiv.org/abs/1702.05803"> Deep learning-based assessment of tumor-associated stroma for diagnosing breast cancer in histopathology images.</a></li>
+          <li>[<span class="required">required</span>] <a href="http://becklab.hms.harvard.edu/files/becklab/files/sci_transl_med-2011-beck-108ra113.pdf"> Systematic analysis of breast cancer morphology uncovers stromal features associated with survival.</a></li>
+          <li>[<span class="required">required</span>] <a href="http://www.nature.com/articles/nature21056.epdf"> Dermatologist-level classification of skin cancer with deep neural networks.</a></li>
+	  <li>[<span class="optional">optional</span>] <a href="https://arxiv.org/abs/1606.05718">Deep Learning for Identifying Metastatic Breast Cancer.</a></li>
+	  <li>[<span class="optional">optional</span>] <a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45732.pdf"> Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus Photographs.</a></li>
+     </ul>
+     </div>
+     <p></p>
+     <hr width="80%">
+     <!--lect 6-->
+     <span class="lecture-date">March 22, 2017</span>
+     <p class="lecture">
+     <span class="lecture-title">Lecture 7: Physiological and laboratory time-series</span>
+       </p><div class="lecture-prep">
+       <ul>
+         <li><span class="lecture-assign">L7 Reflection <a href="https://docs.google.com/forms/d/e/1FAIpQLSfr0AkG7iA6Sg3wXeXSMyyFCN3SOYKUx0G0Qh-dzrq6whyeSA/viewform" >questions</a> due (at noon). </span></li>   	 
+       	<li>[<span class="slides">Slides</span>] <a href="slides/lecture7.pdf">Lecture 7</a>
+        <li>[<span class="required">required</span>] <a href="http://www.sciencedirect.com/science/article/pii/S1532046414000847">Identifying and mitigating biases in EHR laboratory tests.</a></li>
+        <li>[<span class="required">required</span>] <a href="http://homepages.inf.ed.ac.uk/ckiw/postscript/dslds_uai15.pdf">Discriminative Switching Linear Dynamical Systems applied to Physiological Condition Monitoring.</a></li>
+        <li>[<span class="optional">optional</span>] <a
+     href="https://arxiv.org/pdf/1606.01865">Recurrent
+     Neural Networks for Multivariate Time Series with Missing Values.</a></li>
+      </ul>
+     </div>
+     <p></p>
+     <hr width="80%">
+     <!--lect null-->
+     <span class="lecture-date">March 29, 2017</span>
+     <p class="lecture">
+     <span class="lecture-title">No lecture. Spring break.</span>
+     <p></p>
+
+   </div>
+
+
+<!--April -->
+  </a><div class="lecture"><a name="schedule">
+
+  <!--lect 8-->
+     <span class="lecture-date">April 5, 2017</span>
+     <p class="lecture">
+     <span class="lecture-title">Lecture 8: Preventing
+     high-cost care (Guest lecture: <a
+     href="https://shahlab.stanford.edu/">Nigam Shah</a>, MBBS, PhD, Stanford
+     School of Medicine)</span>
+       </p><div class="lecture-prep">
+       <ul>
+	<li><span class="lecture-assign">No reflection questions for 
+     this lecture.</span>
+        <li>[<span class="slides">Slides</span>] <a href="slides/lecture8.pdf">Lecture 8</a>
+        <li>[<span class="required">required</span>] <a href="http://www.sciencedirect.com/science/article/pii/S1532046415002282">Implications of non-stationarity on predictive modeling using EHRs.</a></li>
+        <li>[<span class="optional">optional</span>] <a href="http://bmjopen.bmj.com/content/7/1/e011580">Predicting patient 'cost blooms' in Denmark: a longitudinal population-based study.</a></li>
+     </ul>
+     </div>
+     <p></p>
+     <hr width="80%">
+    
+    <!--lect 9-->
+     <span class="lecture-date">April 12, 2017</span>
+     <p class="lecture">
+     <span class="lecture-title">Lecture 9: Clinical text & natural
+     language processing</span>
+       </p><div class="lecture-prep">
+       <ul>
+         <li><span class="lecture-assign">L9 Reflection <a href="https://goo.gl/forms/QMnEZ6br3pnCAtmC2" >questions</a> due (at noon). </span></li>   	 	 
+        <li>[<span class="slides">Slides</span>] <a href="slides/lecture9.pdf">Lecture 9</a>
+	 <li>[<span class="required">required</span>] <a
+     href="http://www.sciencedirect.com/science/article/pii/S1532046415001501">Challenges
+     in clinical natural language processing for automated disorder
+     normalization.</a> (2015)</li>
+          <li>[<span class="required">required</span>] <a
+     href="https://academic.oup.com/jamia/article-lookup/doi/10.1093/jamia/ocw011">Electronic
+     medical record phenotyping using the anchor and learn
+     framework.</a> (2016)</li>
+          <li>[<span class="optional">optional</span>] <a
+     href="https://imia.schattauer.de/en/contents/archive/issue/2422/manuscript/26832/download.html">Aspiring
+     to Unintended Consequences of Natural Language Processing: A
+     Review of Recent Developments in Clinical and Consumer-Generated Text Processing.</a> (2016)</li>
+     <li>[<span class="optional">optional</span>] <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3168328/">Natural language processing: an introduction.</a> (2011)</li>
+	  <li>[<span class="optional">optional</span>] <a
+     href="http://www.cs.nyu.edu/cs/projects/lsp/pubs/LSPonSNOMED.pdf">Medical Language 
+     Processing: Applications to Patient Data Representation and 
+     Automatic Encoding.</a> (1995)</li>
+     </ul>
+     </div>
+     <p></p>
+     <hr width="80%">
+     <!--lect 10-->
+     <span class="lecture-date">April 19, 2017</span>
+     <p class="lecture">
+     <span class="lecture-title">Lecture 10: Interpretability of machine learning models</span>
+       </p><div class="lecture-prep">
+       <ul>
+         <li><span class="lecture-assign">L10 Reflection <a href="https://goo.gl/forms/fjraIhrgvBvSEr8H2" >questions</a> due (at noon). </span></li> 
+        <li>[<span class="slides">Slides</span>] <a href="slides/lecture10.pdf">Lecture 10</a>
+     	<li>[<span class="required">required</span>] <a
+     href="http://people.dbmi.columbia.edu/noemie/papers/15kdd.pdf">Intelligible 
+     Models for HealthCare: Predicting Pneumonia Risk and Hospital 
+     30-day Readmission.</a> (2015)</li>
+	<li>[<span class="required">required</span>] <a
+     href="https://people.csail.mit.edu/taolei/papers/emnlp16_rationale.pdf">Rationalizing
+     Neural Predictions.</a> (2016)</li>
+	<li>[<span class="required">required</span>] <a
+     href="https://arxiv.org/pdf/1606.03490.pdf">The Mythos of Model Interpretability.</a> (2017)</li>     
+	  <li>[<span class="optional">optional</span>] <a
+     href="http://videolectures.net/kdd2014_rudin_machine_learning/">Algorithms
+     for Interpretable Machine Learning.</a> (2014; video)</li>
+   </ul>
+     </div>
+     <p></p>
+     <hr width="80%">
+     <!--lect 11-->
+     <span class="lecture-date">April 26, 2017</span>
+     <p class="lecture">
+     <span class="lecture-title">Lecture 11: Clustering for subtype discovery</span>
+       </p><div class="lecture-prep">
+       <ul>
+        <li><span class="lecture-assign">L11 Reflection <a
+     href="https://goo.gl/forms/Fe3QUUxjF6BNxc3V2" >questions</a> due
+     (next Monday at noon). </span></li>
+        <li>[<span class="slides">Slides</span>] <a href="slides/lecture11.pdf">Lecture 11</a></li>
+          <li>[<span class="required">required</span>] <a
+     href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3540548/pdf/amia_2012_symp_1276.pdf">Prognostic Physiology: Modeling Patient Severity in Intensive Care Units Using Radial Domain Folding.</a> (2012)</li>
+      <li>[<span class="required">required</span>] <a
+     href="http://finale.seas.harvard.edu/files/finale/files/cormobidity_cluster.pdf">Comorbidity
+     Clusters in Autism Spectrum Disorders: An Electronic Health Record Time-Series Analysis.</a> (2014)</li>
+      <li>[<span class="optional">optional</span>] <a
+     href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3992366/pdf/emss-29902.pdf">Cluster Analysis and Clinical Asthma Phenotypes.</a> (2008)</li>
+     </ul>
+     </div>
+     <p></p>
+   </div>
+
+
+
+<!--May-->
+  </a><div class="lecture"><a name="schedule">
+
+  <!--lect 12-->
+     <span class="lecture-date">May 3, 2017</span>
+     <p class="lecture">
+     <span class="lecture-title">Lecture 12: Disease progression modeling</span>
+       </p><div class="lecture-prep">
+       <ul>
+	<li><span class="lecture-assign">No reflection questions for 
+     this lecture.</span>
+	 <li>[<span class="slides">Slides</span>] <a href="slides/lecture12.pdf">Lecture 12</a>
+      <li>[<span class="optional">optional</span>] <a
+     href="http://cs.nyu.edu/~dsontag/papers/WanSonWan_kdd14.pdf">Unsupervised
+     Learning of Disease Progression Models.</a> (2014)</li>
+           <li>[<span class="optional">optional</span>] <a
+     href="https://www.nature.com/articles/ncomms5022">Temporal
+     disease trajectories condensed from population-wide registry data
+     covering 6.2 million patients.</a> (2014)</li>
+           <li>[<span class="optional">optional</span>] <a
+     href="http://www.c2b2.columbia.edu/danapeerlab/html/pub/Cell2014.pdf">Single-Cell Trajectory Detection Uncovers Progression and Regulatory Coordination in Human B Cell Development.</a> (2014)</li>
+
+     </ul>
+     </div>
+     <p></p>
+     <hr width="80%">
+    
+    <!--lect 13-->
+     <span class="lecture-date">May 10, 2017</span>
+     <p class="lecture">
+     <span class="lecture-title">Lecture 13: Finding optimal treatment
+     policies</span>
+       </p><div class="lecture-prep">
+       <ul>
+        <li><span class="lecture-assign">L13 Reflection <a href="https://goo.gl/forms/s7Ns4vGHyxkhE9m63" >questions</a> due (at noon). </span></li>
+        <li>[<span class="slides">Slides</span>] <a href="slides/lecture13.pdf">Lecture 13</a>
+     <li>[<span class="required">required</span>] <a
+     href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3143507/pdf/nihms266705.pdf">Informing sequential clinical decision-making through
+reinforcement learning: an empirical study.</a> (2011)</li>
+	 <li>[<span class="required">required</span>] <a
+     href="https://arxiv.org/pdf/1704.06300.pdf">A Reinforcement
+     Learning Approach to Weaning of Mechanical Ventilation in Intensive Care Units.</a> (2017)</li>	 
+     <li>[<span class="optional">optional</span>] <a
+     href="http://www.springer.com/us/book/9781461474272">Statistical
+     Methods for Dynamic Treatment Regimes.</a> (2013, book; <a
+     href="https://link-springer-com.libproxy.mit.edu:9443/content/pdf/10.1007%2F978-1-4614-7428-9.pdf">MIT
+ link</a>)</li>
+     <li>[<span class="optional">optional</span>] <a
+     href="http://ieeexplore.ieee.org/document/7591355/">Optimal medication dosing from suboptimal clinical examples: A deep reinforcement learning approach.</a> (2016)</li>
+     <li>[<span class="optional">optional</span>] <a
+     href="https://users.cs.duke.edu/~cynthia/LakkarajuRu17.pdf">Learning Cost-Effective and Interpretable Treatment Regimes.</a> (2017)</li>
+	 <li>[<span class="optional">optional</span>] <a
+     href="https://arxiv.org/pdf/1703.10651.pdf">What-If Reasoning
+     with Counterfactual Gaussian Processes.</a> (2017)</li>
+     
+       </ul>
+     </div>
+     <p></p>
+     <hr width="80%">
+     <!--lect 10-->
+     <span class="lecture-date">May 17, 2017</span>
+     <p class="lecture">
+     <span class="lecture-title">Project presentations</span>
+     <p></p>
+    </div>
+
+
+
+
+<!--Assignments-->
+
+  <a name="Psets">
+  <h3>Problem sets</h3>
+
+   <ul>
+     <li>Problem set 0 [Deadline: Wednesday 02/15/2017 at midnight] </li>
+     <p>
+		For the first problem set, please complete the steps required to get access to MIMIC data outlined <a href="https://mimic.physionet.org/gettingstarted/access/">here</a>
+		One of the steps will require you to fill out a Data Use Agreement (DUA) where you will be asked for: 
+		<ol>
+			<li>A reference name. Write David Sontag </li>
+			<li>The general research area for which the data will be used: Write 6.S897/HST.S53 </li>
+		</ol>
+	</p>
+ 
+
+<li><a href="psets/ps1_prompt.pdf">Problem set 1</a>  [Deadline:March 7th 11:59pm EST through Gradescope] </li>
+<li><a href="psets/ps2_prompt.pdf">Problem set 2</a>  [Deadline:April 25th 11:59pm EST through Gradescope] </li>
+   </ul>
+
+   <hr>
+
+<!--Grading-->
+
+   <a name="grading">
+    <h3>Grading</h3>
+    <ul>
+    <li> 25% homework (2 problem sets) </li>
+    <li> 50% course project (You must discuss with the instructors in advance if you are coregistered with 6.862 and wish to use the same project for both classes. Because of the larger number of credits, we expect your project to be more ambitious.)</li>
+    <li> 25% participation (weekly responses to readings) </li>
+    </ul>
+  <hr>
+
+
+<!--Projects-->
+<a name="projects">
+<h3>Projects</h3>
+<ul>
+  <li> <b>Due dates:</b> 
+    <ul>
+      <li>Project proposals (one per group): April 7th at 5pm.</li>
+      <li>Project presentations: May 17th in class.</li>
+      <li>Project report (one per group): May 18th at 11:59pm.</li>
+    </ul>
+  </li>
+  <li> <b>Collaboration:</b>We strongly prefer 3-5 registered student
+  per group, but we do permit groups with fewer students. Doing
+  something related to your research is fine, but your class
+  project should be distinct and you should be able to isolate your
+  contributions to the project from those of any collaborators outside
+  of the class.
+  </li>
+  <li> <b>Relationship to other classes:</b> You must ask instructors
+  for permission before submitting project proposal if you wish to use
+  the same project for our class and another class (it should also be
+  stated clearly in the proposal itself). If it is one project for two classes you must: 
+  <ol>
+  <li>Produce a project that is twice as large in depth and content as would have been required for either class individually</li>
+  <li>Obtain permission from the instructor of the other class</li>
+</ol>
+  Moreover, all students in the project should be enrolled in both
+classes.</li>
+  </li>
+  <li><b>Meeting with instructors to discuss projects:</b> 
+    <ul>
+      <li>David's office hours: 3-4:30pm on 3/28 and 4/4 in E25-545</li>
+      <li>Maggie's office hours: Wednesdays 5-7 in 56-162</li>
+    </ul>
+  </li>
+  <li> <b>Grading:</b> 
+    <ul>
+      <li> 15% proposal </li>
+      <li> 15% presentation </li>
+      <li> 70% report </li>
+    </ul>
+  </li>
+  <li> <b>Proposal:</b> At most 3 pages, one per group. Send as a PDF to 6.s897hst.s53[at]gmail.com.  Clearly state the following:
+    <ul>
+      <li> Problem you wish to tackle </li>
+      <li> Description of data you plan to use</li>   
+      <li> Proposed approach and methods </li>
+      <li> Evaluation plan</li>
+      <li> Timeline</li>
+      <li> What each student in the group will do.</li>
+    </ul>
+    We understand that much of this would be preliminary at this
+    stage, but these details are important for us to ensure that you
+    are on the right track.
+  </li>
+  <li> Detailed presentation and proposal write up guidelines can be found <a href="psets/project_guidelines.pdf">here</a> </li>
+
+
+
+
+  </ul>
+
+<!--  <li><b>Proposal interviews:</b> To be scheduled by the class -->
+  <!--  staff after proposals are due</li> -->
+<!-- <li> <b>Project Report :</b> Details TBA </li>-->
+</ul>
+<hr>  
+</body>
+</html>
