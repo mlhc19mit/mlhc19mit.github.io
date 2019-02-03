@@ -1,0 +1,216 @@
+<html>
+<head>
+   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+   <meta http-equiv="Pragma" content="no-cache">
+   <meta http-equiv="Expires" content="0">
+   <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+   <link href="style.css" rel="stylesheet" type="text/css">
+   <title>6.S897/HST.956: Machine Learning for Healthcare </title>
+ </head>
+ <body>
+   
+   <h1>6.S897/HST.956: Machine Learning for Healthcare</h1>
+
+   
+   <div id="header">
+     MIT. Spring 2019<br>
+   </div>
+   Instructors: <a href="http://people.csail.mit.edu/dsontag/">David Sontag</a>, <a href="https://www.csail.mit.edu/person/peter-szolovits">Peter Szolovits</a><br>
+   Teaching Assistants: <a href="https://willieboag.wordpress.com/">Willie Boag</a>, <a href="http://irenechen.net">Irene Chen</a><br>
+   Graduate level; Units 3-0-9  (counts as an AAGS subject) <br>
+   Time: Tuesdays & Thursdays, 2:30-4pm <br>
+   Location: 4-270 <br>
+   Prerequisite: 6.036/6.862 or 6.867 or 9.520/6.860 or 6.806/6.864 or 6.438 or 6.034 <br>
+   Contact: <a href="https://piazza.com/mit/spring2019/6s897hst956">Piazza</a><br>
+
+   <hr>
+
+   <!-- <span class="menu">
+     <a href="#course">Course Description</a> |
+     <a href="#schedule">Schedule</a> |  -->
+     <!-- <a href="https://piazza.com/mit/spring2017/6s897hsts53/home">Piazza</a> | -->
+     <!-- <a href="#prereqs">Prerequisites</a>  -->
+      <!-- <a href="#projects">Projects</a> | -->
+     <!-- <a href="#grading">Grading</a>  -->
+    <!-- </span> -->
+<!-- announcements 
+  <h3>Announcements</h3>
+
+   <ul>
+     <li>No announcements yet</li>
+ 
+   </ul>
+
+   <hr>-->
+<!--Course description-->
+<a name="course">
+<h3>Course description</h3>
+<p>Introduces students to machine learning in healthcare, including the
+nature of clinical data and the use of machine learning for risk
+stratification, disease progression modeling, precision medicine,
+diagnosis, subtype discovery, and improving clinical workflows. Topics
+include causality, interpretability, algorithmic fairness, time-series
+analysis, graphical models, deep learning and transfer learning. Guest
+lectures by clinicians from the Boston area and course projects with
+real clinical data emphasize subtleties of working with clinical data
+and translating machine learning into clinical practice.
+</p>
+<hr>
+<!-- schedule -->
+  <a name="schedule">
+   <h3>Schedule</h3>
+
+<!---Feb-->
+
+  </a>
+    <p>Follow the link of the class title (when available) for more information, readings, and slides. Schedule is subject to change.</p>
+    <table  border="1">
+  <tr>
+    <th>Class</th>
+    <th>Date</th> 
+    <th>Title</th>
+    <th>Instructor</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Tu Feb 05</td> 
+    <td>Introduction: What makes healthcare unique?</td>
+    <td>DS</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Th Feb 07</td> 
+    <td>Overview of clinical care</td>
+    <td>PS</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Tu Feb 12</td> 
+    <td>Deep dive into clinical data</td>
+    <td>PS</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Th Feb 14</td> 
+    <td>Risk stratification using EHRs and insurance claims</td>
+    <td>DS</td>
+  </tr>
+  <tr>
+    <td colspan="4" style="text-align:center"> Tu Feb 19 - President's Day, Monday schedule</td>
+  </tr>
+  
+</table>
+  <!-- <p> We are finalizing the schedule. Please see <a href="https://mlhc17mit.github.io">the 2017 course schedule</a> as a beta version although we expect the course to change substantially. Note that the 2017 course was 6 credits, and this course is 12 credits.</p> -->
+  <!--lect 1-->
+
+
+<!--Assignments-->
+
+  <a name="prereqs">
+  <h3>Prerequisite quiz</h3>
+
+  <p>This quiz will not count toward your grade, but will be used by the course staff to check prerequisites (6.036/6.862 or 6.867 or 9.520/6.860 or 6.806/6.864 or 6.438 or 6.034) and to assess students' preparation for this class.</p>
+  
+  <p>Please complete the <a href="https://goo.gl/forms/T7o4r3Z2KFGQTGgm2">prerequisite quiz</a> here. Submit it as soon as possible, and <b>no later than Tuesday 2/5/19 at 11:59pm EST.</b></p>
+
+  <p>
+    <font color="red">Note that because of high demand, we do not have space for listeners.</font>
+  </p>
+
+
+<a name="Psets">
+  <h3>Problem sets</h3>
+  <p>We expect there will be at least four problem sets this year.</p>
+   <ul>
+     <li>Problem set 0 [Deadline: TBD] </li>
+     <p>
+      In order to access sensitive healthcare datasets, you will need to complete the CITI “Data or Specimens Only Research” course. 
+      </p>
+      <ul> 
+        <li> First <a href="https://couhes.mit.edu/training-research-involving-human-subjects">register on the CITI program website</a>, selecting "Massachusetts Institute of Technology (SSO)" as your organization affiliation (not “independent learner”).</li>
+        <li>Follow the links to add a Massachusetts Institute of Technology Affiliates course. In the Human Subjects training category, select the “Data or Specimens Only Research” course. </li>
+          <li>Complete the course and save a copy of your completion report. The completion report lists all modules completed, with dates and scores.</li>
+        </ul>
+  
+</ul>
+<!--Grading-->
+
+   <!-- <a name="grading">
+    <h3>Grading</h3>
+    <ul>
+    <li> 25% homework (2 problem sets) </li>
+    <li> 50% course project (You must discuss with the instructors in advance if you are coregistered with 6.862 and wish to use the same project for both classes. Because of the larger number of credits, we expect your project to be more ambitious.)</li>
+    <li> 25% participation (weekly responses to readings) </li>
+    </ul>
+  <hr> -->
+
+
+<!--Projects-->
+<!-- <a name="projects">
+<h3>Projects</h3>
+<ul>
+  <li> <b>Due dates:</b> 
+    <ul>
+      <li>Project proposals (one per group): April 7th at 5pm.</li>
+      <li>Project presentations: May 17th in class.</li>
+      <li>Project report (one per group): May 18th at 11:59pm.</li>
+    </ul>
+  </li>
+  <li> <b>Collaboration:</b>We strongly prefer 3-5 registered student
+  per group, but we do permit groups with fewer students. Doing
+  something related to your research is fine, but your class
+  project should be distinct and you should be able to isolate your
+  contributions to the project from those of any collaborators outside
+  of the class.
+  </li>
+  <li> <b>Relationship to other classes:</b> You must ask instructors
+  for permission before submitting project proposal if you wish to use
+  the same project for our class and another class (it should also be
+  stated clearly in the proposal itself). If it is one project for two classes you must: 
+  <ol>
+  <li>Produce a project that is twice as large in depth and content as would have been required for either class individually</li>
+  <li>Obtain permission from the instructor of the other class</li>
+</ol>
+  Moreover, all students in the project should be enrolled in both
+classes.</li>
+  </li>
+  <li><b>Meeting with instructors to discuss projects:</b> 
+    <ul>
+      <li>David's office hours: 3-4:30pm on 3/28 and 4/4 in E25-545</li>
+      <li>Maggie's office hours: Wednesdays 5-7 in 56-162</li>
+    </ul>
+  </li>
+  <li> <b>Grading:</b> 
+    <ul>
+      <li> 15% proposal </li>
+      <li> 15% presentation </li>
+      <li> 70% report </li>
+    </ul>
+  </li>
+  <li> <b>Proposal:</b> At most 3 pages, one per group. Send as a PDF to 6.s897hst.s53[at]gmail.com.  Clearly state the following:
+    <ul>
+      <li> Problem you wish to tackle </li>
+      <li> Description of data you plan to use</li>   
+      <li> Proposed approach and methods </li>
+      <li> Evaluation plan</li>
+      <li> Timeline</li>
+      <li> What each student in the group will do.</li>
+    </ul>
+    We understand that much of this would be preliminary at this
+    stage, but these details are important for us to ensure that you
+    are on the right track.
+  </li>
+  <li> Detailed presentation and proposal write up guidelines can be found <a href="psets/project_guidelines.pdf">here</a> </li>
+
+
+
+
+  </ul> -->
+
+<!--  <li><b>Proposal interviews:</b> To be scheduled by the class -->
+  <!--  staff after proposals are due</li> -->
+<!-- <li> <b>Project Report :</b> Details TBA </li>-->
+<!-- </ul> -->
+
+</body>
+</html>
