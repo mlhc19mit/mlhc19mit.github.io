@@ -34,15 +34,15 @@
 <a href="#scribe">Lecture scribes</a> 
 <!-- <a href="#grading">Grading</a>  -->
 </span>
-<!-- announcements 
-  <h3>Announcements</h3>
+ <!-- announcements  -->
+  <!-- <h3>Announcements</h3>
 
    <ul>
-     <li>No announcements yet</li>
+     <li>The first day of class is Tues Feb 05, 2:30pm - 4:00 pm in 4-270. Note that because of high demand, we do not have space for listeners. Please fill out the </li>
  
    </ul>
 
-   <hr>-->
+   <hr> -->
 <!--Course description-->
 <a name="course">
 <h3>Course description</h3>
@@ -56,6 +56,10 @@ lectures by clinicians from the Boston area and course projects with
 real clinical data emphasize subtleties of working with clinical data
 and translating machine learning into clinical practice.
 </p>
+
+<p>
+    <font color="red">Note that because of high demand, we do not have space for listeners.</font>
+  </p>
 <hr>
 <!-- schedule -->
   <a name="schedule">
@@ -66,7 +70,7 @@ and translating machine learning into clinical practice.
   </a>
     <p>Follow the link of the class title (when available) for more information, readings, and slides. Schedule is subject to change.</p>
  
-   <p id="expandAll">[Expand all]</p>
+   <p>[<span id='expandAll'>Expand all</span>]</p>
 
 
     <!-- <p> Show all information.</p> -->
@@ -305,9 +309,7 @@ and translating machine learning into clinical practice.
   
   <p>Please complete the <a href="https://goo.gl/forms/T7o4r3Z2KFGQTGgm2">prerequisite quiz</a> here. Submit it as soon as possible, and <b>no later than Tuesday 2/5/19 at 11:59pm EST.</b></p>
 
-  <p>
-    <font color="red">Note that because of high demand, we do not have space for listeners.</font>
-  </p>
+  
 
 
 <a name="Psets">
@@ -424,6 +426,11 @@ classes.</li>
 
             $("#expandAll").click(function(){
                 $(".lectureInfo").slideToggle("fast");
+                console.log($(this).html());
+                if ($(this).html() == 'Expand all')
+                  $(this).html('Hide all')
+                else
+                  $(this).html('Expand all')
             });
       });
     //]]>
