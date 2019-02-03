@@ -33,7 +33,7 @@ ul {
   font-size:   x-large;
 }
 
-div.lecture {
+/*div.lecture {
   border-style:  solid;
   border-color:  grey;
   margin-top:    25px;
@@ -42,8 +42,23 @@ div.lecture {
   padding-top:   10px;
   passing-bottom: 10px;
 
+}*/
+
+.lectureTitle {
+  color: blue;
 }
 
+.lectureTitle:hover {
+  text-decoration: underline;
+}
+
+#expandAll {
+  color: blue;
+}
+
+#expandAll:hover {
+  text-decoration: underline;
+}
 div.lecture-prep {
   padding-left: 25px;
 }

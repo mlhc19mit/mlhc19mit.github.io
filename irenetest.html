@@ -66,11 +66,8 @@ and translating machine learning into clinical practice.
   </a>
     <p>Follow the link of the class title (when available) for more information, readings, and slides. Schedule is subject to change.</p>
  
-<script>
-$( ".lectureTitle" ).click(function() {
-  $( ".lectureInfo" ).slideToggle( "fast" );
-});
-</script>
+   <p id="expandAll">[Expand all]</p>
+
 
     <!-- <p> Show all information.</p> -->
     <table  border="1">
@@ -81,19 +78,38 @@ $( ".lectureTitle" ).click(function() {
     <th>Instructor</th>
     <th>Assignments</th>
   </tr>
+  
   <tr>
-
+    <!-- <div class="lecture"> -->
     <td>1</td>
     <td>Tues Feb 05</td> 
-    <td>Introduction: What makes healthcare unique?
+    <td>
+      <div class="lectureTitle">Introduction: What makes healthcare unique?</div>
+      
+      <div class="lectureInfo">
+        <ul>
+          <li>[Slides] Lecture 1</li>
+          <li>[required] Insert</li>
+        </ul>
+        </div>
     </td>
     <td>DS</td>
     <td><a href="https://goo.gl/forms/T7o4r3Z2KFGQTGgm2">Prerequisite quiz</a> due, <a href="#Psets">Pset0</a> out</td>
+    <!-- </div> -->
   </tr>
+  
   <tr>
     <td>2</td>
     <td>Thurs Feb 07</td> 
-    <td>Overview of clinical care</td>
+    <td>
+      <div class="lectureTitle">Overview of clinical care</div>
+      <div class="lectureInfo">
+        <ul>
+          <li>[Slides] Lecture 2</li>
+          <li>[required] Put stuff here</li>
+        </ul>
+      </div>
+    </td>
     <td>PS</td>
     <td>Pset1 out</td>
   </tr>
@@ -403,18 +419,12 @@ classes.</li>
 
             $(".lectureInfo").hide();
             $(".lectureTitle").click(function(){
-                $(this).next().next().slideToggle("fast");
-                // if ($(this).children().eq(0).html() == "-")
-                //     $(this).children().eq(0).html("+");
-                // else
-                //     $(this).children().eq(0).html("-");
+                $(this).next().slideToggle("fast");
             });
 
-            $(".lectureTitle").hover(function(){
-                $(this).toggleClass("activeTitle");
-                $(this).children().eq(1).toggleClass("activeTitle");
+            $("#expandAll").click(function(){
+                $(".lectureInfo").slideToggle("fast");
             });
-
       });
     //]]>
     
