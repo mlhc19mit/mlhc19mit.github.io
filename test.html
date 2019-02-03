@@ -6,6 +6,7 @@
    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
    <link href="style.css" rel="stylesheet" type="text/css">
    <title>6.S897/HST.956: Machine Learning for Healthcare </title>
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
  </head>
  <body>
    
@@ -65,6 +66,12 @@ and translating machine learning into clinical practice.
   </a>
     <p>Follow the link of the class title (when available) for more information, readings, and slides. Schedule is subject to change.</p>
 
+<script>
+$( ".lectureTitle" ).click(function() {
+  $( ".lectureInfo" ).slideToggle( "fast" );
+});
+</script>
+
     <!-- <p> Show all information.</p> -->
     <table  border="1">
   <tr>
@@ -75,16 +82,14 @@ and translating machine learning into clinical practice.
     <th>Assignments</th>
   </tr>
   <tr>
+    <div class="lecture">
     <td>1</td>
     <td>Tues Feb 05</td> 
     <td>Introduction: What makes healthcare unique?
-      <!-- <ul>
-        <li> test1 </li>
-        <li> test2 </li>
-      </ul> -->
     </td>
     <td>DS</td>
     <td><a href="https://goo.gl/forms/T7o4r3Z2KFGQTGgm2">Prerequisite quiz</a> due, <a href="#Psets">Pset0</a> out</td>
+  </div>
   </tr>
   <tr>
     <td>2</td>
@@ -390,5 +395,30 @@ classes.</li>
 <!-- <li> <b>Project Report :</b> Details TBA </li>-->
 <!-- </ul> -->
 
+<!-- projDesc -> lectureInfo -->
+<!-- projIconAndTitle -> lectureTitle -->
+<script type="text/javascript">
+
+    //<![CDATA[
+      $(document).ready(function(){
+
+            $(".lectureInfo").hide();
+            $(".lectureTitle").click(function(){
+                $(this).next().next().slideToggle("fast");
+                // if ($(this).children().eq(0).html() == "-")
+                //     $(this).children().eq(0).html("+");
+                // else
+                //     $(this).children().eq(0).html("-");
+            });
+
+            $(".lectureTitle").hover(function(){
+                $(this).toggleClass("activeTitle");
+                $(this).children().eq(1).toggleClass("activeTitle");
+            });
+
+      });
+    //]]>
+    
+</script>
 </body>
 </html>
