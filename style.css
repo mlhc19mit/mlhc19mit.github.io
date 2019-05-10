@@ -1,5 +1,7 @@
 table {
   border-collapse: collapse;
+  /*table-layout: fixed; */
+  /*width: 45%;*/
 }
 body {
   margin:      50px;
